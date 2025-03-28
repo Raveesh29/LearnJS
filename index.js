@@ -30,3 +30,38 @@ let lastName = null; // to be used in situation where we need to clear the value
 // javascript is dynamically typed language 
 
 console.log(typeof(firstName)) // to find out datatype of a variable 
+
+// Reference types 
+// Object 
+// arrays 
+// functions 
+
+
+// Object 
+
+let person = {
+    name:'john',
+    age:'30'
+};
+
+console.log(person);
+
+// accessing values of the object - dot notation
+console.log(person.name);
+
+// accessing values of the object - bracket notation
+console.log(person['age']);
+
+
+// Arrays
+
+let selectedColors = ['red','blue']; //  creating array 
+console.log(selectedColors)
+console.log(selectedColors[1])
+
+selectedColors[2] = 'green';
+selectedColors[4] = 1 // we can store any type of data in an array 
+console.log(selectedColors)
+
+// Array is a type of object. - it is a data structure that is used to store a list of items
+console.log(selectedColors.length)
