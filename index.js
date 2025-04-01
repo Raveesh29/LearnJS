@@ -65,3 +65,43 @@ console.log(selectedColors)
 
 // Array is a type of object. - it is a data structure that is used to store a list of items
 console.log(selectedColors.length)
+
+
+// Functions
+
+
+// performing a task
+function greet(name, lastName) {
+    console.log('hello '+ name + ' ' + lastName);
+}
+
+greet('John', 'Legend');
+greet('Nancy');
+
+// calculate a value 
+function square(number){
+    return number*number;
+}
+
+console.log(square(2));
+
+
+// Operators
+
+// Arithmetic Operators 
+ let x = 10;
+ let y = 100;
+
+ console.log(x+y);
+
+
+// increment ++
+
+console.log(x++);
+console.log(++x);
+
+
+//  decrement -- 
+console.log(--x);
+console.log(x--);
+console.log(x)
