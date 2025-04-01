@@ -104,4 +104,46 @@ console.log(++x);
 //  decrement -- 
 console.log(--x);
 console.log(x--);
-console.log(x)
+console.log(x);
+
+
+// Assignment operators 
+
+x+=1; // x = x+1
+console.log(x);
+
+x*=10; // x = x * 10
+console.log(x);
+
+
+// Comparision operators - the result of this expression is a boolean 
+
+// relational operators
+x = 1;
+console.log(x>0);
+
+// equality - strict (checks for type + value)
+console.log(x===1);
+console.log(x!==1);
+
+// equality - loose (checks only for value; it converts the type of right side to match with left side and then compares if the value is equal)
+console.log('1'==1); // type is converted to string and checked
+console.log(true == 1);
+
+// ternary operator 
+ let score = 60;
+ let result = score > 33 ? 'pass' : 'fail';
+
+ console.log(result);
+
+// logical operators 
+// AND (&&)
+// OR (||)
+// NOT (!)
+
+let highIncome = true;
+let goodCreditScore = true;
+
+let eligibleForLoan = highIncome && goodCreditScore;
+
+console.log(eligibleForLoan);
