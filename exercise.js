@@ -30,7 +30,7 @@ function fizzBuzz(input){
 
 }
 
-console.log('---- Exercise -----')
+console.log('--- Exercise : max of a number ----')
 
 console.log(find_max(10,-9));
 console.log(isLandscape(40,10))
@@ -40,3 +40,27 @@ console.log(fizzBuzz(5));
 console.log(fizzBuzz(3));
 console.log(fizzBuzz(2));
 console.log(fizzBuzz('Hello'));
+
+function checkSpeed(speed){
+    const SpeedLimit = 70
+    points = (Math.floor(speed / 5  - (SpeedLimit/5)))
+    // console.log(points)
+    if (points <=0){
+        return 'Ok'
+    }
+    if (points >= 12){
+        return "Liscence Suspended"
+    }
+
+    return "Points --> "+points
+
+}
+
+console.log('--- Exercise : check speed ---');
+console.log(checkSpeed(10));
+console.log(checkSpeed(75));
+console.log(checkSpeed(92));
+console.log(checkSpeed(180));
+console.log(checkSpeed(130));
+console.log(checkSpeed(73));
+console.log(checkSpeed(88));
