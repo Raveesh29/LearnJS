@@ -93,3 +93,45 @@ function countTruthy(array){
 
 result = countTruthy([1,0,'hello',false,NaN]);
 console.log(result);
+
+console.log('--- Exercise : string properties --- ');
+
+const movie = {
+    title:'a',
+    releaseYear:2018,
+    rating:4.5,
+    director:'b'
+};
+
+function showProperties(obj){
+    for(let key in obj){
+        value = obj[key];
+        if (typeof(value) == 'string'){
+            console.log(key,value);
+        };
+    };
+}
+
+showProperties(movie)
+
+console.log('--- Exercise : Sum of multiples of 3 and 5 ---');
+
+function sum(limit){
+    let total = 0;
+    
+    for(let i = 0;i<=limit;i++){
+        if(i%3 == 0){
+            total = total + i;
+            continue;
+        }
+        if(i%5 == 0){
+            total = total + i;
+            continue;
+        }
+    }
+    
+    return total;
+}
+
+result = sum(10);
+console.log(result);
