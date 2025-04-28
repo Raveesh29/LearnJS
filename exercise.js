@@ -135,3 +135,49 @@ function sum(limit){
 
 result = sum(10);
 console.log(result);
+
+
+// calculate the grade 
+
+console.log('--- Exercise: Calculate Grade ---');
+
+const marks = [80,80,50];
+
+
+result = calculateGrade(marks)
+console.log(result)
+
+function calculateGrade(marks){
+    const averageMarks = calculateAverage(marks);
+
+    if (averageMarks<=59) return 'F';
+    if (averageMarks<=69) return 'D';
+    if (averageMarks<=79) return 'C';
+    if (averageMarks<=89) return 'B';
+    if (averageMarks<=100) return 'A';
+
+};
+
+function calculateAverage(marks) {
+    let totalMarks = 0;
+    for (let score of marks) {
+        totalMarks += score;
+    }
+    return totalMarks / marks.length;
+};
+
+console.log('--- Exercise : show stars ---')
+
+function showStars(rows){
+    
+    for(let row =1; row <= rows; row++){
+        pattern = "";
+        for(let i = 0; i < row; i++)
+        pattern+="*";
+    console.log(pattern);
+    }
+}
+
+showStars(5);
+
+

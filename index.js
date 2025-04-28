@@ -149,3 +149,5 @@ let eligibleForLoan = highIncome && goodCreditScore;
 console.log(eligibleForLoan);
 
 
+
+
