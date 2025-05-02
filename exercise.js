@@ -180,4 +180,25 @@ function showStars(rows){
 
 showStars(5);
 
+console.log('--- Exercise : prime numbers ---')
+
+showPrimes(100)
+
+function showPrimes(limit){
+    for(let num = 2; num<=limit; num++){
+        let loopStopped = 0;
+        for(let i=2; i<num; i++){
+            if ((num % i === 0)){
+                loopStopped = 1;
+                break
+            }
+        }
+        
+        if(loopStopped === 0){
+            console.log(num)
+        }
+        
+    }
+}
+
 
