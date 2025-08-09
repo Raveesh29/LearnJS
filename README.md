@@ -646,9 +646,9 @@ graph TD
     B --> C{Operation Complete?}
     C -->|Success| D[Resolved/Fulfilled]
     C -->|Error| E[Rejected]
-    D --> F[.then() executes]
-    E --> G[.catch() executes]
-    F --> H[.finally() executes]
+    D --> F[then executes]
+    E --> G[catch executes]
+    F --> H[finally executes]
     G --> H
 ```
 
